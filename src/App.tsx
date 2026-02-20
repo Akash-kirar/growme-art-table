@@ -43,7 +43,6 @@ function App() {
       setTotalRecords(res.data.pagination.total);
       setLoading(false);
     } catch (error) {
-      console.error(error);
       setLoading(false);
     }
   };
@@ -95,7 +94,7 @@ function App() {
 
             setSelectedIds([...remaining, ...newSelected]);
           }}
-          selectionMode="multiple"   
+           
       >
 
         <Column
